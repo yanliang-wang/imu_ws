@@ -42,6 +42,12 @@ catkin_make -DCATKIN_WHITELIST_PACKAGES=""
 roslaunch imu_odom read_data.launch  
 ```
 
+If there is an error called `[ERROR] [1627211303.220970]: Fatal: could not find proper MT device.` May the following code will solve the problem.
+
+```bash
+sudo chmod 777 /dev/ttyUSB0
+```
+
 ### 3. Display Odom of IMU by directly discrete integral
 
 #### a. Configure the yaml file 
@@ -96,13 +102,17 @@ Step:
 </launch>
 ```
 
-- roslaunch the rosnode;
+- roslaunch the rosnode and play the bag file;
 
 ```bash
 roslaunch imu_utils xsens.launch
+
+rosbag play -r 200 XXX.bag
 ```
 
+- see the result;
 
+The calibration result is saved in `imu_ws/src/imu_utils/data`.
 
 
 

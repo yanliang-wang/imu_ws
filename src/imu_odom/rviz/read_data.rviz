@@ -74,11 +74,11 @@ Visualization Manager:
         y_scale: 1
         z_scale: 1
       Class: rviz_imu_plugin/Imu
-      Enabled: false
+      Enabled: true
       Name: Imu
       Topic: /imu/data
       Unreliable: false
-      Value: false
+      Value: true
       fixed_frame_orientation: true
     - Angle Tolerance: 0.10000000149011612
       Class: rviz/Odometry
@@ -97,7 +97,7 @@ Visualization Manager:
           Scale: 1
           Value: true
         Value: true
-      Enabled: true
+      Enabled: false
       Keep: 1
       Name: Odometry
       Position Tolerance: 0.10000000149011612
@@ -113,7 +113,7 @@ Visualization Manager:
         Value: Axes
       Topic: /imu/odom
       Unreliable: false
-      Value: true
+      Value: false
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -142,25 +142,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 18.03754997253418
+      Distance: 26.782581329345703
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.2462282031774521
-        Y: 0.0029046377167105675
-        Z: -0.13015258312225342
+        X: -0.9956821799278259
+        Y: -2.061427354812622
+        Z: 1.796334981918335
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.804796576499939
+      Pitch: 0.6997966766357422
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 1.6454142332077026
+      Yaw: 1.5354143381118774
     Saved: ~
 Window Geometry:
   Displays:
