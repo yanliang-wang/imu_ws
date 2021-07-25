@@ -1,0 +1,12 @@
+<launch>
+
+    <rosparam command="load" file="$(find imu_odom)/config/test.yaml"/>
+
+    <node pkg="imu_odom" type="imu_odom_node" name="imu_odom_node" output="screen">
+    </node>
+
+    <node pkg="rviz" type="rviz" name="rviz_imu_odom" args="-d $(find imu_odom)/rviz/test.rviz"/>
+
+    <include file="$(find xsens_driver)/launch/xsens_driver.launch"/>
+    
+</launch>

@@ -1,0 +1,11 @@
+imu_odom:
+  {
+    hz: 200,
+#    g_vec: [-0.0904451, 0.132679, -9.79108],
+    # g_vec: [0.0, 0.0, -9.81],
+    g_vec: [-0.00402496, -0.0978045, -9.79236],
+#    g_vec: [0.123266, 0.147664, -9.77911],
+    enable_position: true,
+    sub_imu_topic: /imu/data,
+    pub_odom_topic: /imu/odom
+  }
